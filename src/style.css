@@ -1,0 +1,123 @@
+header {
+  /* width: 100%; */
+  max-width: 1200px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* .brand-name > h1 {
+  color: black;
+  font-size: 32px;
+} */
+.search > input {
+  width: 100%;
+  min-width: 300px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 2px solid #003049;
+}
+
+.container {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .note-add > h1 {
+  font-size: 24px;
+  color: #003049;
+  font-weight: bold;
+}
+
+.container .note-add .note-add-char {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+}
+
+.container .note-add .note-add-input .note-title {
+  margin: 10px 0;
+}
+.container .note-add .note-add-input {
+  width: 600px;
+}
+
+.container .note-add .note-add-input .note-title > input {
+  /* min-width: 600px; */
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.container .note-add .note-add-input .note-body {
+  margin: 10px 0;
+}
+
+.container .note-add .note-add-input .note-body > textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  resize: none;
+}
+
+.container .note-add .note-add-input button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #00b4d8;
+  border: 0;
+  cursor: pointer;
+}
+
+/* note History */
+
+.notes-history {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 50px;
+}
+
+.notes-history .note-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2%;
+  row-gap: 24px;
+}
+
+.notes-history .note-list .note-item {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 17px 26px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.notes-history .note-list .note-item .note-header .note-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #001d3d;
+}
+
+.notes-history .note-list .note-item .note-header .note-item-date {
+  font-size: 16px;
+  color: #414040d0;
+  margin: 5px 0;
+}
+
+.notes-history .note-list .note-item .note-header .note-item-body {
+  font-size: 18px;
+  text-align: justify;
+  margin: 10px 0;
+  color: #001d3d;
+}

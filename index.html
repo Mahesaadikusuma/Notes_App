@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App Web Component</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/global.css" />
+    <link rel="stylesheet" href="./src/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <!-- <div class="brand-name">
+        <h1>Notes App Component</h1>
+      </div> -->
+      <app-bar></app-bar>
+
+      <!-- <div class="search">
+        <input type="search" name="search" id="search" placeholder="Search" />
+      </div> -->
+      <search-bar></search-bar>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="note-add">
+          <h1>Buat Catatan</h1>
+
+          <span class="note-add-char">50 Karakter</span>
+
+          <form action="">
+            <div class="note-add-input">
+              <div class="note-title">
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="Judul Note" />
+              </div>
+
+              <div class="note-body">
+                <textarea
+                  name="body"
+                  id="body"
+                  placeholder="Tuliskan isi Catatan"></textarea>
+              </div>
+
+              <button type="submit">Buat Catatan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="notes-history">
+        <h1>Catatan Terakhir</h1>
+
+        <section class="note-list">
+          <!-- <div class="note-item">
+            <div class="note-header">
+              <h1 class="note-item-title">Judul Note</h1>
+              <p class="note-item-date">20/11/2020</p>
+
+              <p class="note-item-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+                reiciendis.
+              </p>
+            </div>
+          </div> -->
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./src/script/app.js"></script>
+  </body>
+</html>

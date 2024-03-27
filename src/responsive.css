@@ -1,0 +1,50 @@
+@media screen and (max-width: 700px) {
+  header {
+    width: 100%;
+    background-color: #344e41;
+  }
+
+  .brand-name > h1 {
+    color: white;
+    font-size: 24px;
+  }
+
+  header .search {
+    width: 100%;
+  }
+
+  header .search > input {
+    margin-top: 10px;
+    /* padding: 5px 20px; */
+
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #003049;
+  }
+
+  .container .note-add .note-add-input {
+    width: 450px;
+  }
+
+  /* note history */
+
+  .notes-history {
+    padding: 0 20px;
+  }
+  .notes-history .note-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* column-gap: 2%; */
+    /* row-gap: 24px; */
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .notes-history .note-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* column-gap: 2%; */
+    row-gap: 24px;
+  }
+}
