@@ -51,7 +51,16 @@ header {
 }
 
 .container .note-add .note-add-input .note-title > input {
-  /* min-width: 600px; */
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+}
+
+input-title .note-title {
+  margin: 10px 0;
+}
+
+input-title .note-title > input {
   width: 100%;
   height: 40px;
   padding: 0 10px;
@@ -120,4 +129,11 @@ header {
   text-align: justify;
   margin: 10px 0;
   color: #001d3d;
+}
+
+footer {
+  background-color: #023047;
+
+  margin-top: 50px;
+  display: block;
 }

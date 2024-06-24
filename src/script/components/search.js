@@ -5,6 +5,11 @@ class AppBar extends HTMLElement {
     super();
     this._shadowRoot = this.attachShadow({ mode: "open" });
     this._style = document.createElement("style");
+
+    this._type = this.getAttribute("type");
+    this._name = this.getAttribute("name");
+    this._id = this.getAttribute("id");
+    this._placeholder = this.getAttribute("placeholder");
   }
 
   updateStyle() {
@@ -43,7 +48,7 @@ class AppBar extends HTMLElement {
 
     this._shadowRoot.innerHTML += `      
     <div class="search">
-        <input type="search" name="search" id="search" placeholder="Search" />
+        <input type="${this._type}" name="${this._name}" id="${this._id}" placeholder="${this._placeholder}" />
     </div> 
       `;
   }

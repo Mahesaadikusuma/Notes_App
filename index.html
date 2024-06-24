@@ -18,7 +18,11 @@
       <!-- <div class="search">
         <input type="search" name="search" id="search" placeholder="Search" />
       </div> -->
-      <search-bar></search-bar>
+      <search-bar
+        type="search"
+        name="search"
+        id="search"
+        placeholder="Search"></search-bar>
     </header>
 
     <main>
@@ -26,23 +30,31 @@
         <div class="note-add">
           <h1>Buat Catatan</h1>
 
-          <span class="note-add-char">50 Karakter</span>
+          <!-- <span class="note-add-char">50 Karakter</span> -->
 
-          <form action="">
+          <form action="" id="form">
             <div class="note-add-input">
               <div class="note-title">
                 <input
                   type="text"
                   name="title"
                   id="title"
-                  placeholder="Judul Note" />
+                  placeholder="Judul Note"
+                  required />
               </div>
+
+              <!-- <input-title
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Judul Note"></input-title> -->
 
               <div class="note-body">
                 <textarea
                   name="body"
                   id="body"
-                  placeholder="Tuliskan isi Catatan"></textarea>
+                  placeholder="Tuliskan isi Catatan"
+                  required></textarea>
               </div>
 
               <button type="submit">Buat Catatan</button>
@@ -69,6 +81,9 @@
       </div>
     </main>
 
+    <footer>
+      <footer-bar></footer-bar>
+    </footer>
     <script type="module" src="./src/script/app.js"></script>
   </body>
 </html>
